@@ -12,11 +12,16 @@ And you can always use both, use this project to filter out the files you do not
 
 ### How to use :
 
-- Customize the template files in templates/
-  - See the [documentation](templates/README.md)
+- Customize the template files in templates/. Keep what you want, customize, delete the rest.
+  - See the [documentation](templates/README.md) for more information on what each template does.
 - Extract or Download the MAME XML file and place it somewhere (I use the dat/ subdirectory for my tests but it doesn't matter)
-- View/Edit and then execute the createDats.sh script. It's just a for loop that runs on everything in templates and takes the MAME XML file as an input parameter
+- View/Edit and then execute the createDats.sh script. It's just a simple for loop that runs xsltproc on everything in templates/ and takes the MAME XML file as an input parameter. It uses the source filename as a template for what the output file names are and places all output into output/. Customize to your liking.
   - Example : createDats.sh dat/mame0281.xml
-- View output in the output/ directory.
+- View resulting output in the output/ directory.
 - Import DAT files into your favorite tool (ROMVault, Igir, etc) - Don't forget to set your split/merged settings before organizing ROMs. :)
+  - If you're building a subset collection from your main collection, check out igir and use 'igir link' to create hardlinks instead of copies. Igir supports hard links (the default), sym links, and ref links. See the [documentation](https://igir.io/commands/#link) for more information.
 
+### Results :
+
+Here you can see the results of the MAME 0.281 XML using the default templates from this repository (as of 2025-10-07). If you look at the "missing" counts you can see the substantial difference in the number of files per set.
+![Screenshot of DATs generated from the MAME 0.281 XML inside of ROMVault.](https://github.com/ekrunch/MAME-FilteredDATCreator/blob/main/MAME-FilteredDATCreator-Results.png?raw=true)
