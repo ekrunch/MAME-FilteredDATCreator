@@ -46,5 +46,3 @@ The second step is to filter out what you don't want. This ends up being a bit w
 | parents.xsl | No Clones | /mame/machine/@cloneof is not set |
 | sl.xsl | Software Lists | /mame/machine/softwarelist elements are present |
 
-
-
