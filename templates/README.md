@@ -1,0 +1,1 @@
+XSLT template files. These were generated using Gemini but validated manually so YMMV. The comments are good though so it should be easy enough to figure out custom templates by looking at the examples here and the DTD in the MAME XML Data.

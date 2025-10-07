@@ -1,0 +1,2 @@
+# Don't add MAME DAT files to the git repo
+*.xml
