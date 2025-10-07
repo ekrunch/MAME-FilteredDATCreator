@@ -18,17 +18,6 @@ The second step is to filter out what you don't want. This ends up being a bit w
 <xsl:template match="machine[not(@isbios = 'yes')]"/>
 ```
 
-### How to use :
-
-- Customize the template files in templates/
-  - See the [documentation](templates/README.md)
-- Extract or Download the MAME XML file and place it somewhere (I use the dat/ subdirectory for my tests but it doesn't matter)
-- Execute the createDats.sh script
-  - Example : createDats.sh dat/mame0281.xml
-- View output in the output/ directory.
-- Import DAT files into your favorite tool (ROMVault, Igir, etc) - Don't forget to set your split/merged settings before organizing ROMs. :)
-
-
 ### Included files and what they do :
 | file | purpose | XSL attributes |
 | ---- | ------- | -------------- |
