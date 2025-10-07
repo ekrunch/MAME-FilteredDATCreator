@@ -19,12 +19,12 @@
          
          OR
          
-         GROUP B: Machines that are parents (parentof attribute is set).
-         c) Contains a 'parentof' attribute (@parentof).
+         GROUP B: Machines that are clones (cloneof attribute is set).
+         c) Contains a 'cloneof' attribute (@cloneof).
          
-         These machines are FILTERED OUT (suppressed), ensuring ONLY non-parent machines 
+         These machines are FILTERED OUT (suppressed), ensuring ONLY non-clone machines 
          where input/@coins is strictly greater than 0 are SELECTed (kept) in the output. -->
-    <xsl:template match="machine[not(input/@coins) or input/@coins &lt;= 0 or @parentof]"/>
+    <xsl:template match="machine[not(input/@coins) or input/@coins &lt;= 0 or @cloneof]"/>
 
 </xsl:stylesheet>
 
