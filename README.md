@@ -4,11 +4,18 @@ This script uses XSLT to create filtered MAME DAT files for use in ROM validatio
 
 ## Acknowledgements
 
+--
 This project was inspired by the [mame-categories](https://codeberg.org/mameau/mame-categories) project, which everyone should check out. It uses XPath to filter the MAME XML into Categories (.ini files) that you can use in the UI. Shout out to the creator for the great work.
 
 So why this project then? The difference is in the approach. MAME Categories makes a display filter, but all of the ROM files themselves are still there. The Filtered DAT Creator makes new DAT files for you to feed to your favorite ROM Management tool and just not have the files in the resulting collection. This results in a much smaller collection on the disk and can be idea for those who don't use the MAME frontend but use something else like RetroArch, LaunchB0ox, etc. If you're using something like Igir to manage ROMs, you can hardlink from your main collection to smaller DAT files created by Filtered DAT Creator to make specific sets for particular emulators or individuals without doubling the disk space. ('igir link' is super sweet for making subsets, I wish ROMVault did that)
 
 And you can always use both, use this project to filter out the files you do not want and then use MAME Categories to get some additional filtering in the UI.
+
+--
+Special thanks to the people at [Progetto Snaps](https://www.progettosnaps.net/) for their contribution to the MAME community. They create a MAME [DAT](https://www.progettosnaps.net/dats/MAME/) archive, split and converted for most people's needs. Really great work! 
+
+--
+Last but certainly not least, the team at [mamedev.org](https://www.mamedev.org/) for preserving all of this gaming history into one place.
 
 ### How to use :
 
