@@ -14,7 +14,7 @@ Special thanks to the people at [Progetto Snaps](https://www.progettosnaps.net/)
 
 Last but certainly not least, the amazing team at [mamedev.org](https://www.mamedev.org/) for preserving all of this gaming history into one place.
 
-### How to use :
+## How to use :
 
 - Customize the template files in templates/. Keep what you want, customize, delete the rest.
   - See the [documentation](templates/README.md) for more information on what each template does.
