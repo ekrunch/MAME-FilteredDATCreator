@@ -1,5 +1,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="xml" indent="yes"/>
+    <xsl:strip-space elements="*"/>
 
     <!-- 1. The Identity Template: This rule copies every node (elements, text, comments, etc.) 
          and every attribute it finds, preserving the XML structure by default. -->

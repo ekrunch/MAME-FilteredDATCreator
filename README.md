@@ -24,6 +24,7 @@ Last but certainly not least, the amazing team at [mamedev.org](https://www.mame
 - View resulting output in the output/ directory.
 - Import DAT files into your favorite tool (ROMVault, Igir, etc) - Don't forget to set your split/merged settings before organizing ROMs. :)
   - If you're building a subset collection from your main collection, check out igir and use 'igir link' to create hardlinks instead of copies. Igir supports hard links (the default), sym links, and ref links. See the [documentation](https://igir.io/commands/#link) for more information.
+- There is a machineCountReport.sh script that uses xmllint to count "machine" nodes in the output files. This is handy during template development to see how many machine nodes ended up in the resulting output XML files.
 
 ### Results :
 
